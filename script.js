@@ -16,7 +16,7 @@ function newGrid() {
 
     //find the width and height of each square if the container is 1000px wide
 
-    let width = (1000 - (squaresPerRow - 1)) / squaresPerRow;
+    let width = (1000 - (squaresPerRow + 1)) / squaresPerRow;
 
     const container = document.querySelector("#container");
 
