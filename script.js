@@ -20,6 +20,8 @@ function newGrid() {
 
     const container = document.querySelector("#container");
 
+    container.textContent = "";
+
     for (let i = 1; i <= gridSquares; i++) {
         const square = document.createElement("div");
 
