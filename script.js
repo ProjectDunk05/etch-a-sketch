@@ -10,25 +10,22 @@ function newGrid() {
     
     let squaresPerRow = prompt("Enter number of squares in each row");
 
-    //create new divs in the container div
-    
-    let gridSquares = squaresPerRow * squaresPerRow;
-
     //find the width and height of each square if the container is 1000px wide
 
-    let width = (1000 - (squaresPerRow + 1)) / squaresPerRow;
+    let width = (960 / squaresPerRow);
 
     const container = document.querySelector("#container");
 
     container.textContent = "";
 
-    for (let i = 1; i <= gridSquares; i++) {
+    for (let i = 0; i < squaresPerRow * squaresPerRow; i++) {
         const square = document.createElement("div");
 
         
         square.classList.add("square");
         square.style.width = width + "px";
         square.style.height = width + "px";
+        
         container.appendChild(square);
     };
 
