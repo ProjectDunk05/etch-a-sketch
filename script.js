@@ -10,13 +10,13 @@ function newGrid() {
     
     let squaresPerRow = prompt("Enter number of squares in each row");
 
-    
-
     //find the width and height of each square if the container is 1000px wide
 
     let width = (960 / squaresPerRow);
 
     const container = document.querySelector("#container");
+
+    //clear the previous grid
 
     container.textContent = "";
 
@@ -31,8 +31,7 @@ function newGrid() {
         
         for (let i = 0; i < squaresPerRow * squaresPerRow; i++) {
             const square = document.createElement("div");
-
-            
+    
             square.classList.add("square");
             square.style.width = width + "px";
             square.style.height = width + "px";
@@ -40,17 +39,24 @@ function newGrid() {
             container.appendChild(square);
         };
     };
-    
-
-    //select all elements with class = "square"
-
-    const divs = document.querySelectorAll(".square");
 
     //for each div add a mouse event which changes the background colour when the mouse enters the div
 
+    const divs = document.querySelectorAll(".square");
+
     divs.forEach(div => {
         div.addEventListener("mouseenter", (event) => {
-            div.style.backgroundColor = "red";
+            div.style.backgroundColor = selectedColor;
         })
     });
 };
+
+//add function for user to pick the colour of the squares 
+
+let colorPicker = document.querySelector("#colorPicker");
+
+function updateColor(event) {
+    selectedColor = event.target.value;
+};
+
+colorPicker.addEventListener("input", updateColor);
