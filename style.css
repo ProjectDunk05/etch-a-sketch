@@ -1,7 +1,64 @@
+/* colours */
+:root {
+    --clr-light: #f3f4fb;
+    --clr-dark: #2e2e57;
+    --clr-Martinique300: #abb9e5;
+    --clr-Martinique400: #8396d7;
+    --clr-Martinique500: #6675cb;
+    --clr-Martinique600: #525bbe;
+    --clr-Martinique800: #3f408e;
+}    
+
+* {
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--clr-dark);
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    background-color: var(--clr-Martinique800);
+    color: var(--clr-light);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 100px 50px;
+    border: solid 2px red;
+    background-color: #8396d7;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: baseline;
+    margin-top: 170px;
+    padding: 85px;
+    border: 5px solid;
+    border-color: var(--clr-Martinique600);
+    border-radius: 10%;
+    background-color: var(--clr-Martinique300);  
+}
+
 #container {
     display: flex;
     flex-wrap: wrap;
-    width: 960px
+    width: 680px;
+    border-color: var(--clr-Martinique600);
+    background-color: var(--clr-Martinique300);
    
 }
 
