@@ -4,8 +4,8 @@ for (let i = 0; i < 256; i++) {
     const square = document.createElement("div");
 
     square.classList.add("square");
-    square.style.width = "60px";
-    square.style.height = "60px";
+    square.style.width = "42.5px";
+    square.style.height = "42.5px";
     
     container.appendChild(square);
 };
@@ -46,7 +46,7 @@ function newGrid() {
 
     //find the width and height of each square if the container is 1000px wide
 
-    let width = (960 / squaresPerRow);
+    let width = (680 / squaresPerRow);
 
     const container = document.querySelector("#container");
 
