@@ -11,16 +11,20 @@
     <div id="header">
         <h1>Etch-A-Sketch</h1>
     </div>
-    <div>
-        <btn id="prompt">New Grid</btn>
-    </div>
-    <div>
-        <h2>Pick a color for the squares:</h2>
-        <input type="color" id="colorPicker">
-    </div>
-    <div>
-        <button id="background">Background</button>
-    </div>
-    <div id="container"></div>   
+    <div id="content">
+        <div id="controls">
+            <div>
+                <btn id="prompt">New Grid</btn>
+            </div>
+            <div>
+                <label for="colorPicker" class="color-button">Choose a color:</label>
+                <input type="color" id="colorPicker">
+            </div>
+            <div>
+                <button id="background">Background</button>
+            </div>
+        </div>
+        <div id="container"></div>
+    </div>       
 </body>
 </html>
