@@ -38,20 +38,59 @@ body {
     align-items: center;
     padding: 100px 50px;
     gap: 40px;
-    border: solid 2px red;
     background-color: #8396d7;
 }
 
 #controls {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: space-evenly; 
+    gap: 40px;
     align-items: baseline;
-    padding: 85px;
+    padding: 60px;
     border: 5px solid;
     border-color: var(--clr-Martinique800);
     border-radius: 10%;
     background-color: var(--clr-Martinique300);  
+}
+
+button, label {
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    font-size: 1rem;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: -0.05em;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    border-color: var(--clr-Martinique800);
+    box-shadow: 0 10px 20px rgb(46 46 87), 0 6px 6px, 0 0 100px -10px rgb(46 46 87);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover, label:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px rgb(46 46 87), 0 10px 10px rgb(46 46 87), 0 0 120px -10px rgb(46 46 87);
+   }
+
+#colorSelect {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+label {
+    border: solid 2px;
+    border-color: var(--clr-Martinique800);
+}
+
+input[type="color"] {
+	width: 32px;
+	height: 32px;
+	border: 4px solid;
+    border-radius: 25%;
+    border-color: var(--clr-Martinique800);
+    padding: 0;
 }
 
 #container {
