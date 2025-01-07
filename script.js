@@ -56,7 +56,7 @@ function newGrid() {
 
     // Check if input is a valid number and within a reasonable range
     
-    if (isNaN(squaresPerRow) || squaresPerRow <= 0 || squaresPerRow > 100) {
+    if (isNaN(squaresPerRow) || squaresPerRow <= 0 || squaresPerRow > 100 || !Number.isInteger(+squaresPerRow)) {
         alert("Please enter a valid number between 1 and 100.");
         return;
     } else {
