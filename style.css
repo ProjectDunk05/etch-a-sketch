@@ -55,10 +55,11 @@ body {
 }
 
 button, label {
+    font-family: "Luminari, fantasy";
     background-color: var(--clr-light);
     color: var(--clr-dark);
-    font-size: 1rem;
-    font-weight: 800;
+    font-size: 1.2rem;
+    font-weight: 900;
     text-decoration: none;
     letter-spacing: -0.05em;
     padding: 0.5em 1em;
@@ -80,8 +81,8 @@ button:hover, label:hover {
 }
 
 label {
+    display: inline-block;
     border: solid 2px;
-    border-color: var(--clr-Martinique800);
 }
 
 input[type="color"] {
