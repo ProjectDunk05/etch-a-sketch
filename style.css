@@ -21,6 +21,7 @@ body {
     background-color: var(--clr-dark);
     width: 100%;
     height: 100%;
+    background-color: #8396d7;
 }
 
 #header {
@@ -38,7 +39,6 @@ body {
     align-items: center;
     padding: 100px 50px;
     gap: 40px;
-    background-color: #8396d7;
 }
 
 #controls {
@@ -109,3 +109,26 @@ input[type="color"] {
     box-sizing: border-box;
 }
 
+#instructions {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    border: 5px solid;
+    border-color: var(--clr-Martinique800);
+    background-color: var(--clr-Martinique300);
+    font-family: "Luminari, fantasy";
+    color: var(--clr-dark);
+    font-size: 1rem;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+strong {
+    font-size: 1.4rem;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.8rem;
+}
