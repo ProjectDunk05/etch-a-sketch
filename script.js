@@ -6,6 +6,7 @@ const container = document.querySelector("#container");
 const background = document.querySelector("#background");
 const colorPicker = document.querySelector("#colorPicker");
 const btn = document.querySelector("#prompt");
+const toggle = document.querySelector("#brushToggle");
 
 // start with a 16x16 grid
 for (let i = 0; i < 256; i++) {
@@ -23,7 +24,15 @@ const divs = document.querySelectorAll(".square");
 
 divs.forEach(div => {
     div.addEventListener("click", () => {
-        isPaused = !isPaused;  
+        isPaused = !isPaused;
+         
+         // Update the brushToggle <p> based on the current isPaused state
+         if (isPaused) {
+            toggle.textContent = "Brush: Off";  
+        } else {
+            toggle.textContent = "Brush: On";  
+        };
+
     });
 });
 
@@ -89,6 +98,12 @@ function newGrid() {
         divs.forEach(div => {
             div.addEventListener("click", () => {
                 isPaused = !isPaused; 
+
+                if (isPaused) {
+                    toggle.textContent = "Brush: Off";  
+                } else {
+                    toggle.textContent = "Brush: On";  
+                };
             });
         });
          
