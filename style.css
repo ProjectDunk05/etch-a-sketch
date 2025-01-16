@@ -54,7 +54,7 @@ body {
     background-color: var(--clr-Martinique300);  
 }
 
-button, label {
+button, label, p {
     font-family: "Luminari, fantasy";
     background-color: var(--clr-light);
     color: var(--clr-dark);
@@ -80,7 +80,7 @@ button:hover, label:hover {
     gap: 20px;
 }
 
-label {
+label, p {
     display: inline-block;
     border: solid 2px;
 }
